@@ -2,7 +2,7 @@
 using namespace std;
 class SWAP{
     public:
-    int i;float j;char k;
+    int i;float j;string k;
     void swap(int a,int b){
         i=a;
         a=b;
@@ -13,22 +13,21 @@ class SWAP{
     void swap(float c,float d){
         j=c;
         c=d;
-        d=k;
         d=j;
         cout<<"after swap"<<endl<<"c="<<c<<endl<<"d="<<d<<endl;
     }
-    void swap(char e,char f){
-        k=e;
-        e=f;
-        f=k;
-        cout<<"after swap"<<endl<<"e="<<e<<endl<<"f="<<f<<endl;
+    void swap(string s1,string s2){
+        k=s1;
+        s1=s2;
+        s2=k;
+        cout<<"after swap"<<endl<<"s1="<<s1<<endl<<"s2="<<s2<<endl;
     }
 };
 int main(){
-    SWAP s;
+    SWAP s;string s1="ram",s2="sree";
     s.swap(15,15);
     s.swap(12.5f,4.5f);
-    s.swap('A','b');
+    s.swap(s1,s2);
 }
 //output
 after swap
@@ -38,7 +37,7 @@ after swap
 c=4.5
 d=12.5
 after swap
-e=b
-f=A
+s1=sree
+s2=ram
 
 
