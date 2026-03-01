@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class sum{
+    public:
+    void add(int a,int b){
+        cout<<"sum of a+b:"<<a+b<<endl;
+    }
+    void add(float c,float d){
+        cout<<"sum of c+d:"<<c+d<<endl;
+    }
+};
+int main(){
+    sum s;
+    int a,b;
+    float c,d;
+    cout<<"enter a:";
+    cin>>a;
+    cout<<"enter b:";
+    cin>>b;
+    cout<<"enter c:";
+    cin>>c;
+    cout<<"enter d:";
+    cin>>d;
+    
+    s.add(a,b);
+    s.add(c,d);
+}
+//output
+enter a:5
+enter b:4
+enter c:6
+enter d:1
+sum of a+b:9
+sum of c+d:7
